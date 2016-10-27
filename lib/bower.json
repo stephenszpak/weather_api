@@ -1,0 +1,14 @@
+{
+  "name": "lib",
+  "description": "weather api",
+  "main": "Gruntfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
