@@ -1,0 +1,7 @@
+ {
+    "apiKey": "AIzaSyDVgQjv1OKNPDxB7DFtZ0ez-g-CPGBhzew",
+    "authDomain": "weather-api-auth.firebaseapp.com",
+    "databaseURL": "https://weather-api-auth.firebaseio.com",
+    "storageBucket": "weather-api-auth.appspot.com",
+    "messagingSenderId": "102503572773"
+  };

@@ -5,3 +5,9 @@ body h1 {
   width: 50%;
   background-color: aquamarine;
   text-align: center; }
+
+.output {
+  text-align: center; }
+
+.hidden {
+  display: none; }

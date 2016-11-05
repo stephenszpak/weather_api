@@ -1,0 +1,12 @@
+{
+	"users": {
+		"user1":{
+			"username": "a",
+			"uid":"DcArQLTli0OMKh37UlXURVVVFkA2"
+		},
+		"user2":{
+			"username": "b",
+			"uid": "Pk0ptad7qJZtCcBmnrChOUATUTs1"
+		}
+	}
+}

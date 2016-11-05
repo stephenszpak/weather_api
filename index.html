@@ -9,19 +9,43 @@
 	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
 </head>
 <body>
+
+<div class="container col-xs-4 col-xs-offset-4" id="login-container">
+        <h1 class="form-signin-heading">Todo App</h1>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="text" id="inputUsername" class="form-control" placeholder="Username" required>
+        <button class="btn btn-lg btn-success col-xs-6" id="loginButton">Login</button>
+        <button class="btn btn-lg btn-primary col-xs-6" id="registerButton">Register</button>
+</div>
 	
 
-<div class="panel panel-default search-bar col-xs-offset-3">
+<div class="panel panel-default search-bar col-xs-offset-3 hidden" id="weather">
 	<div class="panel-body">
 		<input class="form-control" type="text" id="weatherSearch" name="" value="" placeholder="WHats the WeaTHer">
 		<button type="button" class="btn btn-primary btn-lg" id="getWeatha" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>">SEARCH</button>
   	</div>
+
+
+<div class="output" id="output"></div>
 </div>
 
-<div id="output"></div>
-
-
+<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDVgQjv1OKNPDxB7DFtZ0ez-g-CPGBhzew",
+    authDomain: "weather-api-auth.firebaseapp.com",
+    databaseURL: "https://weather-api-auth.firebaseio.com",
+    storageBucket: "weather-api-auth.appspot.com",
+    messagingSenderId: "102503572773"
+  };
+  firebase.initializeApp(config);
+</script>
 <script type="text/javascript" src="/lib/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="javascripts/firebase.js"></script>
+<script type="text/javascript" src="javascripts/firebaseAuth.js"></script>
+<script type="text/javascript" src="javascripts/firebaseUser.js"></script>
 <script type="text/javascript" src="javascripts/main.js"></script>
 </body>
 </html>
